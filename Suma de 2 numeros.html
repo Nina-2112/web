@@ -1,0 +1,83 @@
+<html>
+<head><title>Suma de 2 números en HTML</title>
+</head>
+
+<center><img src="encabezado.png"></center><br>
+<p><font color="black" size="4" face="Magneto"> <center>Colegio de Estudios Científicos Y Tecnológicos Del Estado De México Plantel Ixtlahuaca </center></font></p>
+
+<p><font color="black" size="3" face="Magneto"> <center><strong>Elaborado por:</strong>Nina Muñiz Juárez . <strong>Grupo:</strong> 402. <strong>Número de Lista:22</strong><br>
+<strong>Fecha de Elaboración:</strong> 7 de marzo de 2024.<strong> Hora:</strong>11:00 a.m.
+
+<p><font color="black" size="4" face="tahoma"><center><strong>Suma de 2 Números en HTML</strong></center><br>
+
+<script>
+
+function sumar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value); 
+document.MyForm.txtResultado.value=n1+n2;
+}
+</script>
+
+<script>
+function restar(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2= parseInt(document.MyForm.txtNumero2.value);
+document.MyForm.txtResultado.value=n1-n2;
+}
+</script>
+
+<script>
+function multiplicar(){
+var n1= parseInt(document.MyForm.txtNumero1.value); 
+var n2= parseInt(document.MyForm.txtNumero2.value); 
+document.MyForm.txtResultado.value=n1*n2;
+}
+</script>
+
+<script>
+function dividir(){
+var n1= parseInt(document.MyForm.txtNumero1.value);
+var n2=parseInt(document.MyForm.txtNumero2.value); 
+document.MyForm.txtResultado.value=n1/n2;
+}
+</script>
+
+<body>
+<center><table width="1000" border="1">
+<form name="MyForm">
+<tr>
+<td width="200"><label>Dame el 1er Número: </label></td>
+<td width="200"><input type="text" name="txtNumero1"></td>
+<td width="200" rowspan="4"><img src="minimo.png" width="120" height="100></td>
+</tr>
+
+<tr>
+<td><label>Dame el segundo numero: </label></td>
+<td><input type="text" name="txtNumero2"></td>
+</tr>
+
+<tr>
+<td><label>Moatrar Resultado: </label></td>
+<td><input type="text" name="txtResultado"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="center"><input type="button" value="SUMA" onclick="sumar()"</td>
+<input type="button" value="RESTA" onclick="restar()"</td>
+<input type="button" value="MULTIPLICACIÓN" onclick="multiplicar()"</td>
+<input type="button" value="DIVISIÓN" onclick="dividir ()"></td>
+</tr>
+
+</form>
+</table>
+</body>
+<center><br><table border="0" width="1200"></br></center>
+<footer>
+ <div style="background-color:#DE6C8F; color: #fff; text-align: center; paddin: 10x;">
+ <p>Hecho En Mexico por Nina Muñiz JuarezG &copy; 2024-My sitio Web</p>
+ <p>Contactanos:Te recomendamos abrirlo en Google Chrome para una mejor experiencia  </p>
+</div>
+</footer>
+
+</html>
